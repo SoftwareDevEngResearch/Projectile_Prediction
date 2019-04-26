@@ -4,4 +4,5 @@ pytest
 numpy
 pandas
 PyYAML
+Cube_data.xlsx
 #
