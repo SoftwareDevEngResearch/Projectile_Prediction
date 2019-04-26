@@ -3,9 +3,9 @@ print(__doc__)
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_classification
-import test_data as td
+import projectile_data as pd
 
-
+"""This module will analyze the test data provided from projectile_data and eliminate parameters that are determined to not heavily influence the end test result"""
 #First, miscellaneous test parameters will be deleted and 
 #analysis results will be given to the user
 
