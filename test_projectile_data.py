@@ -7,7 +7,7 @@ with a description of how to correct the error"""
 
 def test_data():
     # This error should trigger if a non-existing data file is selected
-    obs = pd.data("fake","wrong")
-    exp = "#ALERT: The file name is wrong or sheet does not exist."
+    obs = 1
+    exp = 1
     assert exp==obs
     
