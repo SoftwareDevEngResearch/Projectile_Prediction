@@ -7,7 +7,7 @@ import sys as sys
 #sheet=input("Sheet name data is on: ")
 
 
-cube=data("cube_data.xlsx","Real")    
+cube=pd.read_excel("cube_data.xlsx","Real")    
 #The following is test data imported if the correct file was chosen    
 # collected_data.py
 class collected_data(object):
