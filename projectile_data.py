@@ -6,14 +6,8 @@ import sys as sys
 #file_name=input("File name in folder: ")
 #sheet=input("Sheet name data is on: ")
 
-def data(file_name,sheet):
-    try:    
-        cube=pd.read_excel(file_name, sheet_name=sheet)
-        return cube
-    except:
-        print("#ALERT: The file name is wrong or sheet does not exist.")
-        sys.exit()
-cube=data("cube_data.xlsx","Real")    
+
+cube=pd.read_excel("cube_data.xlsx","Real")    
 #The following is test data imported if the correct file was chosen    
 # collected_data.py
 class collected_data(object):
