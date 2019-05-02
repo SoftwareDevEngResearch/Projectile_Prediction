@@ -1,5 +1,4 @@
 #The following are checking importing errors for projectile data
-import projectile_data as pd
 
 """A lot of the tests that are conducted with this document will be based on user input and providing the correct error to the user along
 with a description of how to correct the error"""
@@ -10,4 +9,3 @@ def test_data():
     obs = 1
     exp = 1
     assert exp==obs
-    
