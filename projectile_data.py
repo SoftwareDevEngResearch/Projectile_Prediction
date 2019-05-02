@@ -1,7 +1,7 @@
 """The data will be loaded from an Excel file with the left most column being the velocity measured"""
 import pandas as pd
 import numpy as np
-import sys as sys
+
 
 #file_name=input("File name in folder: ")
 #sheet=input("Sheet name data is on: ")
