@@ -4,7 +4,7 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='ProP (Projectile Prediction)',
+    name='ProP',
     version='0.1.0',
     description='Predict projectile requirements through machine learning.',
     author='Levi Coey',
