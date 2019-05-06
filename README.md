@@ -2,4 +2,4 @@
 
 This program will use existing projectile test data to predict future test parameters required to reach a velocity target. 
 
-https://travis-ci.org/coeyl/Projectile_Prediction/jobs/529008759#
+[![Build Status](https://travis-ci.org/coeyl/Projectile_Prediction.svg?branch=master)](https://travis-ci.org/coeyl/Projectile_Prediction)
