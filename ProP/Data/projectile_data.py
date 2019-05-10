@@ -31,12 +31,12 @@ def collect_data():
         nor=cube.shape[0]
         if tpe=="test":
             cube_test={}
-            for i in range(nor-90,nor):
+            for i in range(nor-90):
                 cube_test[i]=np.array(list(cube.values[i]))
             return cube_test
         if tpe=="learn":
             cube_learn={}
-            for i in range(nor-90):
+            for i in range(nor-90,nor):
                 cube_learn[i]=np.array(list(cube.values[i]))
             return cube_learn
     

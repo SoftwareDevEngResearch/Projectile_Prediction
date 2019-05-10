@@ -15,7 +15,6 @@ def mach():
     def linear_reg():
         """This method is comparing system predictions with one parameter"""
         # Use a predetermined number of features
-        
         system,cube_learn,cube_test=prod.collect_data()
         
         # Split the data into training/testing sets
@@ -48,20 +47,24 @@ def mach():
         plt.plot(cube_X_test, cube_y_pred, color='blue', linewidth=3)
     
     
+    
     def lasso():
         system,cube_learn,cube_test=prod.collect_data()
             
-        """This is looking at 3 parameters"""
-        # Split the data into training/testing sets
-        
-                
-        """Need to change this so that 
-        the arrays include 
-        all parameters in the file"""
-        
-        
-        cube_X_train =np.reshape(np.array([[system[2].parameter[:-30]], [system[3].parameter[:-30]], [system[4].parameter[:-30]]]).T,(-1,3))
-        cube_X_test = np.reshape(np.array([[system[2].parameter[-30:]], [system[3].parameter[-30:]], [system[4].parameter[-30:]]]).T,(-1,3))
+        """This is looking at more than one parameter"""
+        parameters=len(system)-1
+        cube_X_train=np.empty(shape=(parameters,(len(cube_learn))),dtype=int)
+        cube_X_test= np.empty(shape=(parameters,(len(cube_test))),dtype=int)
+        i=1
+        while i<=parameters:
+            new_train=np.array([system[i].parameter[:-30]])
+            cube_X_train[i-1]=new_train
+            new_test=np.array([system[i].parameter[-30:]])
+            cube_X_test[i-1]=new_test
+            i+=1
+            
+        cube_X_train=np.reshape(cube_X_train.T,(-1,parameters))
+        cube_X_test=np.reshape(cube_X_test.T,(-1,parameters))
         
         # Split the targets into training/testing sets
         cube_y_train = np.reshape(np.array([system[0].parameter[:-30]]),(-1,1))
@@ -73,18 +76,16 @@ def mach():
         y_pred_enets = enet.fit(cube_X_train, cube_y_train).predict(cube_X_test)
         r2_score_enet = r2_score(cube_y_test, y_pred_enets)
         print("Mean squared error: %.2f" % r2_score_enet)
-
+        
         print(enet)
         plt.scatter(cube_X_test[0:,0], y_pred_enets, color='red', linewidth=3)
         plt.scatter(cube_X_train[0:,0], cube_y_train,  color='black')
-                
         plt.xticks(())
         plt.yticks(())
-        
         plt.show()
         
-    
-    parameters=len(learn[0])
+        
+    parameters=len(system)
     if parameters==2:
         return linear_reg()
     elif parameters>2:
