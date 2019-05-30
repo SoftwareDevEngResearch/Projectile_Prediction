@@ -9,8 +9,8 @@ sys.path.append('C:/Users/beard/Desktop/Python Programs/Class Project/Projectile
 import projectile_data as prod
 
 
-def mach():
-    system,learn,test=prod.collect_data()
+def mach(threat):
+    system,learn,test=prod.collect_data(threat)
     
     def linear_reg():
         """This method is comparing system predictions with one parameter"""
@@ -75,21 +75,22 @@ def mach():
         
         y_pred_enets = enet.fit(cube_X_train, cube_y_train).predict(cube_X_test)
         r2_score_enet = r2_score(cube_y_test, y_pred_enets)
-        print("Mean squared error: %.2f" % r2_score_enet)
+##        print("Mean squared error: %.2f" % r2_score_enet)
+##        
+##        print(enet)
+##        plt.scatter(cube_X_test[0:,0], y_pred_enets, color='red', linewidth=3)
+##        plt.scatter(cube_X_train[0:,0], cube_y_train,  color='black')
+##        plt.xticks(())
+##        plt.yticks(())
+##        plt.show()
         
-        print(enet)
-        plt.scatter(cube_X_test[0:,0], y_pred_enets, color='red', linewidth=3)
-        plt.scatter(cube_X_train[0:,0], cube_y_train,  color='black')
-        plt.xticks(())
-        plt.yticks(())
-        plt.show()
+##        
+##    parameters=len(system)
+##    if parameters==2:
+##        return linear_reg()
+##    elif parameters>2:
+##        return lasso()
+##    else:
+##        print("Error in data recieved, not enough parameters.")
         
-        
-    parameters=len(system)
-    if parameters==2:
-        return linear_reg()
-    elif parameters>2:
-        return lasso()
-    else:
-        print("Error in data recieved, not enough parameters.")
-        
+    return lasso()

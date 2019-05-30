@@ -6,9 +6,7 @@ sys.path.append('C:/Users/beard/Desktop/Python Programs/Class Project/Projectile
 
 #The following is test data imported if the correct file was chosen    
 # collected_data.py
-def collect_data():
-    cube=pd.read_excel("Cube_data.xlsx","Real") 
-    
+def collect_data(cube):
     class collected_data(object):
         """This will classify the test data"""
         def __init__(self,data,column):
