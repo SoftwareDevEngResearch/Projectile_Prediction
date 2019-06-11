@@ -9,13 +9,13 @@ parser.print_help()
 workbook="%s.xlsx" % args.doc
 book='Prediction.xlsx'
 cube=pd.read_excel(workbook,sheet_name="Sheet1")
-y_accuracy=male.mach(cube)
+#y_accuracy=male.mach(cube)
 
-#new_cube=pd.read_excel(workbook,sheet_name="Sheet2")
-#y_predic=male.mach(cube,new_cube)
+new_cube=pd.read_excel(workbook,sheet_name="Sheet2")
+y_predic=male.mach(cube,new_cube)
 
 
-new_cube['Data']=y_predic
+new_cube['Powder load']=y_predic
 # Create a Pandas dataframe from the data.
 df = pd.DataFrame(new_cube)
 
