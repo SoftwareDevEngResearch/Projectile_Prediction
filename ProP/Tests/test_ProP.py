@@ -1,5 +1,5 @@
 #The following are checking importing errors for projectile data
-from Data.machine_learning import lasso
+#from Data.machine_learning import lasso
 """A lot of the tests that are conducted with this document will be based on user input and providing the correct error to the user along
 with a description of how to correct the error"""
 
