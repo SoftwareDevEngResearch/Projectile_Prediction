@@ -4,6 +4,7 @@ This program will use existing projectile test data to predict future test param
 
 [![Build Status](https://travis-ci.org/coeyl/Projectile_Prediction.svg?branch=master)](https://travis-ci.org/coeyl/Projectile_Prediction)
 
+[![DOI](https://zenodo.org/badge/181944492.svg)](https://zenodo.org/badge/latestdoi/181944492)
 
 PyPi website:
 https://test.pypi.org/project/ProP/
