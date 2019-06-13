@@ -13,7 +13,7 @@ https://test.pypi.org/project/ProP/
 
 The easiest way to install ProP is from PyPI with
 
-    > pip install ProP
+    > pip install -i https://test.pypi.org/simple/ ProP==1.0.1
 
 ## Usage
 Once the ProP is installed, a list of functions that can be used is provided with 'prop -h' or 'prop --help'
