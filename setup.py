@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='ProP',
-    version='0.1.0',
+    version='1.0.1',
     description='Predict projectile requirements through machine learning.',
     author='Levi Coey',
     author_email='coeyl@oregonstate.edu',
@@ -19,7 +19,7 @@ setup(
     ],
     python_requires='>=3',
     zip_safe=False,
-    packages=['ProP', 'ProP.Data', 'ProP.MachLearn', 'ProP.Tests'],
+    packages=['ProP', 'ProP.Data', 'ProP.Tests'],
     # or find automatically:
 #    package=find_packages(),
 #    package_dir={
