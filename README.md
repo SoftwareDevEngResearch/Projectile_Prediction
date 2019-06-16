@@ -13,12 +13,12 @@ https://test.pypi.org/project/ProP/
 
 The easiest way to install ProP is from PyPI with
 
-    > pip install -i https://test.pypi.org/simple/ ProP==1.0.1
+    > pip install -i https://test.pypi.org/simple/ ProP==1.0.2
 
 ## Usage
 Once the ProP is installed, a list of functions that can be used is provided with 'prop -h' or 'prop --help'
 
-The sole interaction of ProP 0.1.0 is using 'prop -d' or 'prop --doc' followed by the title of the excel file
+The sole interaction of ProP 1.0.2 is using 'prop -d' or 'prop --doc' followed by the title of the excel file
 that will be used for the software. Note, the title does NOT include ".xlsx".
 
 ## Example
