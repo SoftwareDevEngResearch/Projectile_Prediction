@@ -13,7 +13,7 @@ https://test.pypi.org/project/ProP/
 
 The easiest way to install ProP is from PyPI with
 
-    > pip install ProP
+    > pip install -i https://test.pypi.org/simple/ ProP==1.0.1
 
 ## Usage
 Once the ProP is installed, a list of functions that can be used is provided with 'prop -h' or 'prop --help'
@@ -33,4 +33,4 @@ for the second sheet is unknown, it can be left blank or filled in with one's.
 The software is then executed following the guidelines listed in Usage.
 
 The software will then generate a list of proposed gun powder loads for the shots of interest in a second
-excel sheet.
+excel sheet. 
