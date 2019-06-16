@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='ProP',
-    version='1.0.1',
+    version='1.0.2',
     description='Predict projectile requirements through machine learning.',
     author='Levi Coey',
     author_email='coeyl@oregonstate.edu',
