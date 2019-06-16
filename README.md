@@ -32,7 +32,8 @@ all parameters on the second sheet must match the ones included on the first she
 for the second sheet is unknown, it can be left blank or filled in with one's.
 
 The software is then executed using the following command:
-    >python prop.py -d cube_data
+
+    > python prop.py -d cube_data
 
 Following the execution of the software, the user will then need to open the second excel file named "Prediciton.xlsx".
 Inside the file on the first folder, the software will have generated a list of proposed gun powder loads for the shots of interest based on
