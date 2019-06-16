@@ -5,7 +5,6 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 import sys
-sys.path.append('C:/Users/beard/Desktop/Python Programs/Class Project/Projectile_Prediction/ProP/Data')
 import projectile_data as prod
 
 
