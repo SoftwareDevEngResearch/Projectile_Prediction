@@ -30,7 +30,8 @@ On the second page of the same document, test parameters of predicted system nee
 all parameters on the second sheet must match the ones included on the first sheet. Because the gunpowder
 for the second sheet is unknown, it can be left blank or filled in with one's.
 
-The software is then executed following the guidelines listed in Usage.
+The software is then executed using the following command:
+    >prop.py -d cube_data
 
 The software will then generate a list of proposed gun powder loads for the shots of interest in a second
-excel sheet. 
+excel sheet.
