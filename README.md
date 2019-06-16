@@ -15,6 +15,7 @@ The easiest way to install ProP is from PyPI with
 
     > pip install -i https://test.pypi.org/simple/ ProP
 
+
 ## Usage
 Once the ProP is installed, a list of functions that can be used is provided with 'prop -h' or 'prop --help'
 
@@ -30,7 +31,10 @@ On the second page of the same document, test parameters of predicted system nee
 all parameters on the second sheet must match the ones included on the first sheet. Because the gunpowder
 for the second sheet is unknown, it can be left blank or filled in with one's.
 
-The software is then executed following the guidelines listed in Usage.
+The software is then executed using the following command:
 
-The software will then generate a list of proposed gun powder loads for the shots of interest in a second
-excel sheet. 
+    > python prop.py -d cube_data
+
+Following the execution of the software, the user will then need to open the second excel file named "Prediciton.xlsx".
+Inside the file on the first folder, the software will have generated a list of proposed gun powder loads for the shots of interest based on
+the prediction data included in the "Cube_data" file on the second sheet.

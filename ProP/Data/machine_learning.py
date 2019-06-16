@@ -5,7 +5,8 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 import sys
-import projectile_data as prod
+import Data.projectile_data as prod
+
 
 
 def mach(threat,det):
@@ -88,7 +89,6 @@ def mach(threat,det):
         cube_X_pred= np.empty(shape=(parameters,(len(threat_pred))) ,dtype=int)
         i=1
         while i<parameters:
-            print(i)
             new_train=np.array([sys_threat[i].parameter[0:]])
             cube_X_train[i-1]=new_train
             new_test=np.array([sys_det[i].parameter[0:]])
